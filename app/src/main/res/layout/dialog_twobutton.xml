@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="260dp"
+android:layout_height="wrap_content"
+android:background="@drawable/border_white_10dp">
+
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/border_white_10dp">
+
+	<TextView
+		android:id="@+id/tv_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:paddingLeft="15.0dip"
+		android:paddingRight="15.0dip"
+		android:paddingTop="5.0dip"
+		android:text="支付成功"
+		android:textColor="@color/gray_main"
+		android:textSize="18.0sp"
+		android:visibility="gone" />
+
+	<TextView
+		android:id="@+id/dialog_notic_text"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:minHeight="60.0dip"
+		android:paddingBottom="20.0dip"
+		android:paddingLeft="15.0dip"
+		android:paddingRight="15.0dip"
+		android:paddingTop="10.0dip"
+		android:text="Message is Empty!"
+		android:textColor="@color/gray_main"
+		android:textSize="15.0sp" />
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="0.5dip"
+		android:background="@color/gray_main_line" />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/dialog_notic_cancel"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:gravity="center"
+			android:paddingBottom="15.0dip"
+			android:paddingTop="15.0dip"
+			android:text="取消"
+			android:textColor="@color/gray_main"
+			android:textSize="16.0sp" />
+
+		<View
+			android:id="@+id/ll_lable"
+			android:layout_width="0.5dip"
+			android:layout_height="fill_parent"
+			android:background="@color/gray_main_line"
+			android:visibility="visible" />
+
+		<TextView
+			android:id="@+id/dialog_notic_confirm"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:gravity="center"
+			android:paddingBottom="15.0dip"
+			android:paddingTop="15.0dip"
+			android:text="确定"
+			android:textColor="@color/gray_main"
+			android:textSize="16.0sp" />
+	</LinearLayout>
+</LinearLayout>
+</RelativeLayout>

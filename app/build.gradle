@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.os.crm"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 12
+        versionName "0.2.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "16a4c2089946a9c2412814d4", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res',
+                    'src/main/res/layout/bonus',
+                    'src/main/res/layout/myview',
+                    'src/main/res/layout/Contact',
+                    'src/main/res/layout/mainpage',
+                    'src/main/res/layout/shenpi',
+                    'src/main/res/layout/huikuan',
+                    'src/main/res/layout/hetong',
+                    'src/main/res/layout/dingdan',
+                    'src/main/res/layouts'
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.support:support-v4:27.1.0'
+    api 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:cardview-v7:27.1.0'
+    //    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    api 'com.google.code.gson:gson:2.8.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    api 'com.contrarywind:Android-PickerView:3.2.7'
+    implementation 'com.squareup.okhttp:okhttp:2.0.0'
+    //    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    api 'me.shaohui:bottomdialog:1.1.9'
+    api 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    api 'com.arialyy.aria:aria-core:3.3.10'
+    annotationProcessor 'com.arialyy.aria:aria-compiler:3.3.10'
+    api 'org.jetbrains:annotations-java5:15.0'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    api 'com.github.chaychan:BottomBarLayout:1.1.1'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.35'
+    api 'de.hdodenhof:circleimageview:2.2.0'
+    api 'com.github.HITGIF:TextFieldBoxes:1.4.1'
+    api 'com.github.SilenceDut:jpinyin:v1.0'
+    api 'com.github.fodroid:XRadioGroup:v1.1'
+    api 'com.xyz.step:step:1.0.4'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.github.HuanTanSheng:EasyPhotos:2.3.0'
+    //    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.github.ReactiveX:RxJava:v2.1.10'
+    implementation 'com.zhy:autolayout:1.4.5'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.facebook.fresco:fresco:0.12.0'
+    implementation 'com.facebook.fresco:animated-gif:0.12.0'
+    api 'com.pgyersdk:sdk:2.8.1'
+    implementation files('libs/Msc.jar')
+    implementation files('libs/Sunflower.jar')
+    api 'cn.jiguang.sdk:jpush:3.1.1'
+    // 此处以JPush 3.1.1 版本为例。
+    api 'cn.jiguang.sdk:jcore:1.1.9'
+    // 此处以JCore 1.1.9 版本为例。
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    implementation 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    implementation 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
+}

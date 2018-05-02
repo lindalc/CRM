@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/file_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            tools:src="@mipmap/tupian"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|left"
+            android:textSize="8pt"
+            android:textColor="@color/black"
+            android:id="@+id/file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="test file name"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

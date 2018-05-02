@@ -1,0 +1,78 @@
+{
+    "dingdaninfo":{
+        "dingdanbianhao" : "YR1801301355",
+        "yewubianhao" : "test1",
+        "wanzheng": 0,
+        "shenpi" : 1,
+        "shenpibeizhu" : "testtest",
+        "dingdanzhuangtai" : 0,
+        "datetime" : "2018-01-24 08:53",
+        "timestamp" : 1516755180
+    },
+    "hetong" : {
+        "hetong":1,
+        "hetongbianhao" : "ttt",
+        "yewuyuan" : "反反复复",
+        "qiandingriqi" : "2018年01月24日"
+    },
+    "kehuziliao" : {
+        "kehumingcheng" : "发发发",
+        "lianxiren":{
+            "name" : "头发方法",
+            "tel" : "5555555"
+            },
+        "kehudizhi" : "复古风该喝喝感觉不到"
+    },
+    "shebei" : {
+        "yunshufangshi" : "物流送货",
+        "anzhuang" : "0",
+        "deviceinfo":[{
+            "xinghao" : "古古怪怪",
+            "danjia":33325.2,
+            "shuliang": 10,
+            "zongjia":333252,
+            "jihuoriqi": "2018年02月24日",
+            "fadianji" : "",
+            "shuibeng":"",
+            "dianqijian":"",
+            "pentuyanse":"",
+            "anzhuang":"",
+            "waixingchicunyaoqiu":"",
+            "yeyagang":"",
+            "shuixiang" : "",
+            "caozuofangshi":"点动",
+            "shangxiafuyangfangshi":"液压",
+            "shangxiafuyang":[0,120],
+            "zuoyouxuanzhuanfangshi":"减速机",
+            "zuoyouxuanzhuanjiaodu":[-160,160],
+            "beizhu" : ""
+        },{
+            "xinghao" : "古古怪怪",
+            "danjia":33325.2,
+            "shuliang": 10,
+            "zongjia":333252,
+            "jihuoriqi": "2018年02月24日",
+            "fadianji" : "",
+            "shuibeng":"",
+            "dianqijian":"",
+            "pentuyanse":"",
+            "anzhuang":"",
+            "waixingchicunyaoqiu":"",
+            "yeyagang":"",
+            "shuixiang" : "",
+            "caozuofangshi":"点动",
+            "shangxiafuyangfangshi":"液压",
+            "shangxiafuyang":[0,120],
+            "zuoyouxuanzhuanfangshi":"减速机",
+            "zuoyouxuanzhuanjiaodu":[-160,160],
+            "beizhu" : ""
+        }]
+    },
+    "money" : {
+        "zongjia" : "20000.0",
+        "zhibaojin" : "0%",
+        "fukuanfangshi" : "过分不烦不烦",
+        "shuifou" : "1",
+        "ticheng" : "1%"
+    }
+}

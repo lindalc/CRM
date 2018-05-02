@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.os.crm.ui.widget.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.os.crm.ui.widget.TitleLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:showDividers="middle"
+                android:divider="@drawable/linearlayout_divider_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="申请时间"
+                  android:textSize="15dp"/>
+              <EditText
+                  android:id="@+id/shenqingshijian"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLines="1" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="申请理由"
+                  android:textSize="15dp"/>
+              <EditText
+                  android:id="@+id/shenqingliyou"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLines="3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额（单位：元）"
+                    android:textSize="15dp"/>
+                <EditText
+                    android:id="@+id/jine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="是否是专项资金"
+              android:textSize="15dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+               <RadioGroup
+                   android:id="@+id/SEX1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                  <RadioButton
+                     android:id="@+id/btYes"
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:text="是:"
+                     android:textSize="15dp"
+                     android:layout_marginBottom="32dp"/>
+                  <RadioButton
+                     android:id="@+id/btNo"
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:layout_alignBaseline="@+id/View7"
+                     android:layout_alignBottom="@+id/View7"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentStart="true"
+                     android:text="否:"
+                     android:textSize="15dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/SEX1"
+                android:layout_below="@id/dingdanxinxi"
+                android:layout_toRightOf="@+id/SEX1"
+                android:text="作为通用资金"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/dingdanxinxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/SEX1"
+                android:textSize="15dp"
+                android:paddingBottom="0dp"
+                android:maxLines="3"
+                android:hint="·需要填写订单编号和客户名称\n·以上需要使用自动匹配填充的功能获取到客户的id号及订单编号"/>
+            </RelativeLayout>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/shangchuanpingzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传凭证（发票、车票等凭证）"
+            android:textSize="15dp" />
+
+        <com.example.os.crm.ui.widget.ChoosePic
+            android:id="@+id/addpic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.os.crm.ui.widget.ChoosePic>
+
+        <com.example.os.crm.ui.widget.ChooseContact
+            android:id="@+id/addspr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.os.crm.ui.widget.ChooseContact>
+        <Button
+            android:id="@+id/tijiaoshenqing"
+            android:text="提交申请"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
+        </ScrollView>
+</LinearLayout>
+</LinearLayout>

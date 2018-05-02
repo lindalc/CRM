@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">CRM</string>
+    <string name="permission_request_denied">Permission request denied</string>
+    <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+    <string name="xiazai">下载</string>
+    <string-array name="zhibaojin">
+        <item>0%</item>
+        <item>5%</item>
+        <item>10%</item>
+    </string-array>
+    <string-array name="yunshu">
+        <item>物流送货</item>
+        <item>物流自提</item>
+        <item>专车</item>
+    </string-array>
+
+    <string name="dingdanbianhao">订单编号</string>
+    <string name="hetongbianhao">合同编号</string>
+    <string name="tianjiahetong">添加合同</string>
+    <string name="yewuyuan">业务员(XXX,XXX)</string>
+    <string name="yewuyuan_short">业务员</string>
+    <string name="kehumingcheng">客户名称</string>
+    <string name="addnewkehu">添加客户</string>
+    <string name="shebeizongjia">设备总价</string>
+    <string name="ticheng">提成X%</string>
+    <string name="tichengjine">提成金额</string>
+    <string name="zhibaojin">质保金X%</string>
+    <string name="zhibaojin_jine">质保金</string>
+    <string name="fukuanfangshi">付款方式</string>
+    <string name="shuifou">是否含税</string>
+    <string name="shuifoushi">含税</string>
+    <string name="shuifoufou">不含税</string>
+    <string name="yunshufangshi">运输方式</string>
+    <string name="zhidaoanzhuang">指导安装</string>
+    <string name="zhidaoshi">指导</string>
+    <string name="zhidaofou">不指导</string>
+    <string name="jiaohuoriqi">交货日期</string>
+    <string name="qita">备注</string>
+    <string name="tijiaodingdan">提交订单</string>
+    <string name="quxiaotijiao">取消提交</string>
+    <string name="lianxiren">联系人</string>
+    <string name="dizhi">客户地址</string>
+    <string name="lianxirendianhua">电话</string>
+    <string name="zhekou">折扣</string>
+
+    <string name="uebwxkhc">设备型号</string>
+    <string name="uebwuull">数量(台)</string>
+    <string name="uebwdjjx">单价(元)</string>
+    <string name="uebwzsjx">总价(元)</string>
+    <string name="jnhoriqi">交货日期</string>
+    <string name="fadmjizu">发电机型号</string>
+    <string name="cczofhui">操作方式</string>
+    <string name="yeyagvge">液压缸规格</string>
+    <string name="dmqijmpbpd">电器件品牌</string>
+    <string name="uvxlrsji">水箱规格</string>
+    <string name="pftuyjse">喷涂颜色</string>
+    <string name="anvlfhui">安装方式</string>
+    <string name="uhxxfuyhfhui">俯仰方式(eg:液压)</string>
+    <string name="uhxxfuyhjndu">俯仰角度</string>
+    <string name="zoyzxrvrfhui">旋转方式(eg:液压)</string>
+    <string name="zoyzxrvrjndu">旋转角度</string>
+    <string name="uvbgxkhc">水泵规格</string>
+    <string name="wdxkiicuycqq">外形尺寸要求</string>
+    <string name="uhxxqiui">起始角度</string>
+    <string name="uhxxvsvi">终止角度</string>
+    <string name="zoyzqiui">起始角度</string>
+    <string name="zoyzvsvi">终止角度</string>
+    <string name="fujmlpbn">附件</string>
+    <string name="submit">确定</string>
+    <string name="zids">自动</string>
+    <string name="dmds">点动</string>
+    <string name="vibcjbdcqiuijm">质保金到期时间</string>
+    <string name="vibcjbdcqiuijm_short">到期时间</string>
+
+    <string name="rightarrow">查看详情</string>
+    <string name="deviceinfo">设备信息</string>
+
+    <string name="ddufpi">待审批</string>
+    <string name="yitsyi">已同意</string>
+    <string name="yibohv">已驳回</string>
+    <string name="wjvg">完整</string>
+    <string name="buwjvg">不完整</string>
+    <string name="wjig">完成</string>
+    <string name="wwwjig">未完成</string>
+    <string name="jibfwjig">基本完成</string>
+
+    <string name="fuzeyewu">负责业务</string>
+    <string name="title_activity_ke_hu_zi_ln">KeHuZiLn</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="desc_shrinkup">收起</string>
+    <string name="desc_spread">全文</string>
+
+</resources>

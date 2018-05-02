@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.os.crm.ui.activity.AddFundActivity">
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/hvkrjbee_l"
+            android:paddingTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/hvkrjbee"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="回款金额" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/kehumkig_l"
+            android:paddingTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/kehumkig"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="客户名称" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/hvkrriqi_l"
+            android:paddingTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/hvkrriqi"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="回款日期" />
+        </android.support.design.widget.TextInputLayout>
+        <com.example.os.crm.ui.widget.ChoosePic
+            android:id="@+id/choose_pic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.example.os.crm.ui.widget.ChoosePic>
+        <com.example.os.crm.ui.widget.ChooseContact
+            android:id="@+id/choose_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.example.os.crm.ui.widget.ChooseContact>
+        <Button
+            android:text="提交回款"
+            android:id="@+id/tijn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
